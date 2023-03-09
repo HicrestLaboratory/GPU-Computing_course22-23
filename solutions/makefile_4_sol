@@ -1,0 +1,20 @@
+CC = gcc
+OPT = -std=c99 -O3
+
+BIN_FOLDER := bin
+BATCH_OUT_FOLDER := outputs
+
+MAIN    =  lab1_ex4_sol.c
+
+all: $(BIN_FOLDER)/lab1_ex4_sol
+
+$(BIN_FOLDER)/lab1_ex4_sol: $(MAIN)
+	@mkdir -p $(BIN_FOLDER)
+	@mkdir -p $(BATCH_OUT_FOLDER)
+	$(CC) $^ -o $@ $(OPT)
+
+clean:
+	rm -r $(BIN_FOLDER)
+
+clean_batch_outputs:
+	rm $(BATCH_OUT_FOLDER)/*
