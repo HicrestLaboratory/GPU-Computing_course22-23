@@ -98,7 +98,7 @@ int main(int argc, char *argv[]) {
 // =========================================== Set-up the problem ============================================
 
   if (argc < 2) {
-    printf("Usage: lab1_ex2 n\n");
+    printf("Usage: lab2_ex1 n\n");
     return(1);
   }
   printf("argv[1] = %s\n", argv[1]);
